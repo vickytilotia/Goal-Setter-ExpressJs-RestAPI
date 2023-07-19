@@ -37,7 +37,8 @@ const registerUser = asyncHandler(async (req,res) => {
         res.status(201).json({
             _id: user.id,
             name: user.name,
-            email: user.email
+            email: user.email,
+            token : generateToken(user._id)
         })
     } else {
         res.status(400)
@@ -52,16 +53,49 @@ const registerUser = asyncHandler(async (req,res) => {
 // @access public
 const loginUser = asyncHandler(async (req,res) => {
     
-    res.json({message:'I am logged In'})
+    const {email, password} = req.body 
+
+    const user = await User.findOne({email})
+
+    if(user && (await bcrypt.compare(password,user.password))){
+        res.status(201).json({
+            message:'User LoggedIn',
+            _id: user.id,
+            name: user.name,
+            email: user.email,
+            token : generateToken(user._id)
+        })
+    } else {
+        res.status(400)
+        throw new Error('Invalid Credentials')
+    }
 })
 
 // @desc Register a new user
 // @route GET /api/users/me
-// @access public
+// @access private
 const getMe = asyncHandler(async (req,res) => {
-    
-    res.json({message:'My user data'})
+    // used authMiddleware for token authentication 
+    // jwt token used 
+    // the middleware provide user id from token 
+
+    const {_id, name, email} = await User.findById(req.user.id)
+
+    res.status(200).json({
+        id: _id,
+        name,
+        email,
+
+    })
+
 })
+
+// generate a jwt token 
+const generateToken = (id) =>{
+    return jwt.sign({id}, process.env.JWT_SECRET,{
+        expiresIn: '30d', //30 days
+    })
+}
 
 module.exports = {
     registerUser,
