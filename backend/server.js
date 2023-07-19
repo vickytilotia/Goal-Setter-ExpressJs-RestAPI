@@ -1,7 +1,7 @@
 const express = require('express')
 const colors = require('colors')
 const dotenv = require('dotenv').config()
-const {errorHandler} = require('./middleware/errorMiddleware')
+const { errorHandler } = require('./middleware/errorMiddleware')
 const connectDB = require('./config/db')
 const port = process.env.PORT || 5000
 
@@ -13,7 +13,7 @@ const app = express()
 
 // using middleware
 app.use(express.json()) // for json
-app.use(express.urlencoded({extended: false})) //for url encoded
+app.use(express.urlencoded({ extended: false })) //for url encoded
 
 
 // api routes
@@ -25,4 +25,4 @@ app.use('/api/users', require('./routes/userRoutes'))
 app.use(errorHandler)
 
 // server configuration 
-app.listen(port, ()=> console.log(`Server started on ${port}`))
+app.listen(port, () => console.log(`Server started on ${port}`))
