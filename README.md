@@ -1,114 +1,51 @@
-<p align="center">
-  <a href="" rel="noopener">
- <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
-</p>
+# Goal Setter
 
-<h3 align="center">expressjs-mongodb-restapi</h3>
+This project is a goal-setter application built with Express.js and REST API. Users can register and login to manage their goals by adding or deleting them. JWT tokens are used for authentication, and the frontend is implemented using React.js.
 
-<div align="center">
 
-[![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
-
-</div>
-
----
-
-<p align="center"> Few lines describing your project.
-    <br> 
-</p>
-
-## 📝 Table of Contents
-
-- [About](#about)
-- [Getting Started](#getting_started)
-- [Deployment](#deployment)
-- [Usage](#usage)
-- [Built Using](#built_using)
-- [TODO](../TODO.md)
-- [Contributing](../CONTRIBUTING.md)
-- [Authors](#authors)
-- [Acknowledgments](#acknowledgement)
-
-## 🧐 About <a name = "about"></a>
-
-Write about 1-2 paragraphs describing the purpose of your project.
-
-## 🏁 Getting Started <a name = "getting_started"></a>
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them.
+```bash
+Key Features 📝
+1. Backend- NodeJs, ExpressJs
+2. Frontend- ReactJs, React-Redux
+3. JWT Authentication, RestAPI
+4. Allowed Operations
+   1. Users can register, login
+   2. Users can add, view, edit, and delete goals
+   3. RestAPI CRUD operations allowed
 
 ```
-Give examples
-```
 
-### Installing
+## How to Install this app 🚀
 
-A step by step series of examples that tell you how to get a development env running.
+```javascript
+# Install Dependencies
+# Backend Dependencies
+npm install
 
-Say what the step will be
+# Frontend Dependencies
+cd frontend
+npm install
 
-```
-Give the example
-```
+# To run the server
+npm run server
+npm run dev
 
-And repeat
 
-```
-until finished
-```
+# This is the command used to install a package.
+npm install <package>
 
-End with an example of getting some data out of the system or using it for a little demo.
-
-## 🔧 Running the tests <a name = "tests"></a>
-
-Explain how to run the automated tests for this system.
-
-### Break down into end to end tests
-
-Explain what these tests test and why
 
 ```
-Give an example
-```
 
-### And coding style tests
+## Contributing
 
-Explain what these tests test and why
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
 
-```
-Give an example
-```
+Please make sure to update tests as appropriate.
 
-## 🎈 Usage <a name="usage"></a>
+## Snapshots
 
-Add notes about how to use the system.
+![Capture](https://github.com/vickytilotia/Goal-Setter-ExpressJs-RestAPI/assets/32337899/7bf14187-b3d3-429c-be73-8e838a067d14)
 
-## 🚀 Deployment <a name = "deployment"></a>
-
-Add additional notes about how to deploy this on a live system.
-
-## ⛏️ Built Using <a name = "built_using"></a>
-
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
-- [NodeJs](https://nodejs.org/en/) - Server Environment
-
-## ✍️ Authors <a name = "authors"></a>
-
-- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
-
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
-
-## 🎉 Acknowledgements <a name = "acknowledgement"></a>
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- References
+![ss](https://github.com/vickytilotia/Goal-Setter-ExpressJs-RestAPI/assets/32337899/f5945587-a381-4871-a178-da41147e6984)
