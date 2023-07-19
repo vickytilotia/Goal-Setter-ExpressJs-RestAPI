@@ -1,0 +1,506 @@
+{
+	"info": {
+		"_postman_id": "f6042d3b-234d-44d9-acd2-f22984032d68",
+		"name": "Goal, User API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25800198"
+	},
+	"item": [
+		{
+			"name": "Create User",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token eccfc8469fa650b2b7c7c2929356c1eb69086c6b",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Yjc1MmE2YWU5OGE2MzRlZDE0ZWIwMyIsImlhdCI6MTY4OTczNjg5MiwiZXhwIjoxNjkyMzI4ODkyfQ.gAJw4OrwqeG3cjqVIbiTrm2kp6FVPgsJf5t-9yp87p8",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Vivek kumar",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "vicky947@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/users",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login User",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token eccfc8469fa650b2b7c7c2929356c1eb69086c6b",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Yjc1MmE2YWU5OGE2MzRlZDE0ZWIwMyIsImlhdCI6MTY4OTczNjg5MiwiZXhwIjoxNjkyMzI4ODkyfQ.gAJw4OrwqeG3cjqVIbiTrm2kp6FVPgsJf5t-9yp87p8",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Vivek kumar",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "vicky947@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/users/user",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User Details",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Yjc2MmMwMTMyN2UzMjgwMDFlZDY2NCIsImlhdCI6MTY4OTc0MDAxNSwiZXhwIjoxNjkyMzMyMDE1fQ.bPNuOfRBR2p8YvdXaYb9JorUgW6lfztX6W95ztM-63I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token eccfc8469fa650b2b7c7c2929356c1eb69086c6b",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Yjc1MmE2YWU5OGE2MzRlZDE0ZWIwMyIsImlhdCI6MTY4OTczNjg5MiwiZXhwIjoxNjkyMzI4ODkyfQ.gAJw4OrwqeG3cjqVIbiTrm2kp6FVPgsJf5t-9yp87p8",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Vivek kumar",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "vicky947@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/users/me",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add a Goal",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Yjc2MmMwMTMyN2UzMjgwMDFlZDY2NCIsImlhdCI6MTY4OTc0MDAxNSwiZXhwIjoxNjkyMzMyMDE1fQ.bPNuOfRBR2p8YvdXaYb9JorUgW6lfztX6W95ztM-63I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token eccfc8469fa650b2b7c7c2929356c1eb69086c6b",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Yjc1MmE2YWU5OGE2MzRlZDE0ZWIwMyIsImlhdCI6MTY4OTczNjg5MiwiZXhwIjoxNjkyMzI4ODkyfQ.gAJw4OrwqeG3cjqVIbiTrm2kp6FVPgsJf5t-9yp87p8",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Vivek kumar",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "vicky947@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "text",
+							"value": "My first Goal",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/goals",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"goals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Goal Details",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Yjc2MmMwMTMyN2UzMjgwMDFlZDY2NCIsImlhdCI6MTY4OTc0MDAxNSwiZXhwIjoxNjkyMzMyMDE1fQ.bPNuOfRBR2p8YvdXaYb9JorUgW6lfztX6W95ztM-63I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token eccfc8469fa650b2b7c7c2929356c1eb69086c6b",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Yjc1MmE2YWU5OGE2MzRlZDE0ZWIwMyIsImlhdCI6MTY4OTczNjg5MiwiZXhwIjoxNjkyMzI4ODkyfQ.gAJw4OrwqeG3cjqVIbiTrm2kp6FVPgsJf5t-9yp87p8",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Vivek kumar",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "vicky947@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "text",
+							"value": "My first Goal",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/goals",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"goals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Goal",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Yjc2MmMwMTMyN2UzMjgwMDFlZDY2NCIsImlhdCI6MTY4OTc0MDAxNSwiZXhwIjoxNjkyMzMyMDE1fQ.bPNuOfRBR2p8YvdXaYb9JorUgW6lfztX6W95ztM-63I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token eccfc8469fa650b2b7c7c2929356c1eb69086c6b",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Yjc1MmE2YWU5OGE2MzRlZDE0ZWIwMyIsImlhdCI6MTY4OTczNjg5MiwiZXhwIjoxNjkyMzI4ODkyfQ.gAJw4OrwqeG3cjqVIbiTrm2kp6FVPgsJf5t-9yp87p8",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Vivek kumar",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "vicky947@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "text",
+							"value": "My first Goal edited",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/goals/64b763871327e328001ed66a",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"goals",
+						"64b763871327e328001ed66a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Goal",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Yjc2MmMwMTMyN2UzMjgwMDFlZDY2NCIsImlhdCI6MTY4OTc0MDAxNSwiZXhwIjoxNjkyMzMyMDE1fQ.bPNuOfRBR2p8YvdXaYb9JorUgW6lfztX6W95ztM-63I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token eccfc8469fa650b2b7c7c2929356c1eb69086c6b",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Yjc1MmE2YWU5OGE2MzRlZDE0ZWIwMyIsImlhdCI6MTY4OTczNjg5MiwiZXhwIjoxNjkyMzI4ODkyfQ.gAJw4OrwqeG3cjqVIbiTrm2kp6FVPgsJf5t-9yp87p8",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Vivek kumar",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "vicky947@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "text",
+							"value": "My first Goal edited",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/goals/64b763871327e328001ed66a",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"goals",
+						"64b763871327e328001ed66a"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
