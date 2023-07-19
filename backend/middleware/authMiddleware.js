@@ -7,6 +7,8 @@ const protect = asyncHandler(async (req, res, next) => {
 
     if(req.headers.authorization && req.headers.authorization.startsWith('Bearer')){
         try{
+            // temp 
+            console.log(req.headers.authorization)
             // Get token from header 
             token = req.headers.authorization.split(' ')[1] //removing word bearer from token
             
