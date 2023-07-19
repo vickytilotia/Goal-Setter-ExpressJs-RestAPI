@@ -7,7 +7,7 @@ This project is a goal-setter application built with Express.js and REST API. Us
 Key Features 📝
 1. Backend- NodeJs, ExpressJs
 2. Frontend- ReactJs, React-Redux
-3. JWT Authentication, RestAPI
+3. JWT Authentication, RestAPI, MongoDB
 4. Allowed Operations
    1. Users can register, login
    2. Users can add, view, edit, and delete goals
